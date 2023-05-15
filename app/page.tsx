@@ -7,14 +7,14 @@ export default async function Home() {
   const projects: Project[] = await getProjects()
 
   return (
-    <div className='max-w-5xl mx-auto py-20'>
+    <div className='max-w-5xl mx-auto px-10 py-20'>
       <h1 className="text-7xl font-extrabold">Hola soy
         <span className="bg-gradient-to-r from-sky-300 to-indigo-500 bg-clip-text text-transparent"> Ivan!</span>
       </h1>
 
       <h2 className="mt-24 font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-3xl">Mis Proyectos</h2>
 
-      <div className='mt-14 grid grid-cols-3 gap-5'>
+      <div className='mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {projects.map((proj) => (
 
           <div key={proj._id} className='border rounded-lg p-3'>
