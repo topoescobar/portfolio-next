@@ -7,7 +7,7 @@ import schemas from "./sanity/schemas"; //usando schemas ordenados en barrels
 const config = defineConfig({
     projectId: '69y3yni7',
     dataset: 'production',
-    title: 'portfolio ivan',
+    title: 'Portfolio Ivan',
     apiVersion: '14-05-23',
     basePath: '/admin',
 
