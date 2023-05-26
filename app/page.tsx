@@ -18,7 +18,8 @@ export default async function Home() {
       <div className='mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {projects.map((proj) => (
 
-          <Link href={`/projects/${proj.slug}`} key={proj._id} className='border-2 rounded-lg p-3 hover:scale-105 hover:border-3 hover:bg-gradient-to-br from-sky-700 to-indigo-500 transition duration-250'>
+          <Link href={`/projects/${proj.slug}`} key={proj._id} 
+          className='border-2 rounded-lg p-3 hover:scale-105 hover:border-3 hover:bg-gradient-to-br from-sky-700 to-indigo-500 transition duration-250'>
             {proj.image && (
               <div className='project_img'>
                 <Image
