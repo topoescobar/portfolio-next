@@ -22,7 +22,6 @@ export async function getProjects() {
 
 export async function getProject(slug:string): Promise<Project> { //aca si uso Promise para que declarado el type del retorno
 
-  // query usando groq
   return client.fetch( //devuelve todo el array y seleccionamos el 1ero con coincidencia con el slug
     groq`*[_type == 'project' && slug.current == $slug][0] {
       _id,
@@ -36,4 +35,4 @@ export async function getProject(slug:string): Promise<Project> { //aca si uso P
     {slug} 
   )
   
-}
+} 
