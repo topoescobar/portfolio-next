@@ -24,6 +24,7 @@ export default function RootLayout({
           <Link href='/' className='bg-gradient-to-r from-sky-300 to-indigo-500 bg-clip-text text-transparent text-lg font-bold'>
             TOPO-DEV
           </Link>
+          <Link href='/admin'> Admin </Link>
         </header>
         <main>{children}</main>
 
