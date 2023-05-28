@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default async function Home() {
 
-  const projects: Project[] = await getProjects()
+  const projects: Project[] = await getProjects() //defino que es de tipo project xq no esta declarado como promesa en la funcion creada
 
   return (
     <div className='max-w-5xl mx-auto p-20'>
