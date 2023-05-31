@@ -23,17 +23,18 @@ export default async function RootLayout({
 
     <html lang="es">
 
-      <body className='max-w-8xl mx-auto p-6 ' >
+      <body className='max-w-7xl mx-auto p-6 ' >
         <header className='flex items-center justify-between'>
           <Link href='/' className='bg-gradient-to-r from-sky-300 to-indigo-500 bg-clip-text text-transparent text-lg font-bold'>
             TOPO-DEV
           </Link>
-          <Link href='/admin'> Admin </Link>
 
-          <div className="flex items-center gap-5 text-sm text-gray-200">
+          <div className="flex items-center gap-5 text-lg text-blue-400">
             {pages.map((page) => (
-              <Link key={page._id} href={`/${page.slug}`} className="hover:underline">{page.title}</Link>
+              <Link key={page._id} href={`/${page.slug}`} className="hover:">{page.title}</Link>
             ))}
+            <Link href='/admin'> Admin </Link>
+
           </div>
 
         </header>
